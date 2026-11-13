@@ -79,7 +79,7 @@ const STYLES = [
   { id: 'grid',     emoji: '🌆', label: 'Grid',      description: 'Retro perspective horizon' },
   { id: 'waves',    emoji: '🌊', label: 'Waves',     description: 'Layered flowing waves' },
   { id: 'stars',    emoji: '🌌', label: 'Stars',     description: 'Starfield with a planet' },
-  { id: 'hex',      emoji: '⬡',  label: 'Hex',       description: 'Honeycomb mesh' },
+  { id: 'hex',      emoji: '🐝',  label: 'Hex',       description: 'Honeycomb mesh' },
   { id: 'aurora',   emoji: '🌠', label: 'Aurora',    description: 'Soft glowing light blobs' },
   { id: 'diagonal', emoji: '🏁', label: 'Stripes',   description: 'Bold diagonal stripes' },
   { id: 'dots',     emoji: '🔴', label: 'Halftone',  description: 'Retro halftone dots' },
