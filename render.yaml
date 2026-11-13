@@ -1,0 +1,25 @@
+# Render Blueprint: one-click deploy of the bot as a background worker.
+# Note: Render background workers and persistent disks are paid features.
+services:
+  - type: worker
+    name: 900lvlbot
+    runtime: node
+    plan: starter
+    buildCommand: npm install --no-audit --no-fund
+    startCommand: npm start
+    autoDeploy: true
+    disk:
+      name: bot-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false        # you'll be asked for it during setup
+      - key: CLIENT_ID
+        sync: false
+      - key: GUILD_ID
+        sync: false
+      - key: DB_PATH
+        value: /data/bot.db
+      - key: NODE_VERSION
+        value: "20"

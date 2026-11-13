@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest a new feature, theme or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it be useful?
+  - type: textarea
+    id: theme
+    attributes:
+      label: Suggesting a theme?
+      description: Give it a name and three hex colors (background, primary, secondary), and a style if you have one in mind.
+      placeholder: "Name: Neon Tokyo\nBackground: #0B0B1A\nPrimary: #FF3EA5\nSecondary: #00E5FF\nStyle: Grid"
